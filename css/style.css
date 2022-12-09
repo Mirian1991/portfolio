@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap");
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(225deg, rgba(255, 255, 255, 0.0623599782) 41%, rgba(35, 133, 205, 0.9783263647) 62%);
+}
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header .header-content ul {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+header .header-content ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+header .header-content .logo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  color: white;
+}
+
+.personal-main {
+  display: flex;
+}
+.personal-main .personal-info h1 {
+  width: 510px;
+  height: 110px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  margin-top: 160px;
+  margin-bottom: 40px;
+}
+.personal-main .personal-info p {
+  width: 500px;
+  height: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.personal-main .myphoto {
+  width: 300px;
+  height: 380px;
+  margin-left: 280px;
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+
+.skill-content {
+  background: #EDF7FA;
+  height: 350px;
+  margin-bottom: 150px;
+}
+.skill-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 30px;
+  margin-left: 10px;
+}
+.skill-content .skills-list {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-left: 20px;
+  margin-top: 70px;
+  justify-content: center;
+}
+.skill-content .skills-list .skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill-content .skills-list .skill h2 {
+  margin-top: 30px;
+}
+.skill-content .skills-list .card-image {
+  width: 95px;
+  height: 95px;
+  background-position: center;
+  background-size: cover;
+}
+.skill-content .skills-list .imige-wrapper1 {
+  background-image: url("../photo/html5.png");
+}
+.skill-content .skills-list .imige-wrapper2 {
+  background-image: url("../photo/css.png");
+}
+.skill-content .skills-list .imige-wrapper3 {
+  background-image: url("../photo/scss.jpg");
+}
+.skill-content .skills-list .imige-wrapper4 {
+  background-image: url("../photo/figma.png");
+}
+.skill-content .skills-list .imige-wrapper5 {
+  background-image: url("../photo/XD.png");
+}
+
+.Featured-works {
+  margin-bottom: 60px;
+}
+.Featured-works .main-flex {
+  display: flex;
+  -moz-column-gap: 55px;
+       column-gap: 55px;
+  row-gap: 100px;
+  flex-wrap: wrap;
+}
+.Featured-works h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.Featured-works .projeckt-1 {
+  width: 350px;
+  height: 500px;
+  box-shadow: 3px 6px 5px 2px rgba(0, 0, 0, 0.47);
+}
+.Featured-works .projeckt-1 .project-image1 {
+  width: 100%;
+  height: 50%;
+  background-image: url(../photo/project1.PNG);
+  background-position: center;
+  background-size: cover;
+}
+.Featured-works .projeckt-1 .project-flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.Featured-works .projeckt-1 .project-flex .stack-list {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.Featured-works .projeckt-1 .project-flex .project-page {
+  font-size: 24px;
+  font-weight: 500;
+}
+.Featured-works .projeckt-1 .project-flex .project-stack {
+  font-size: 18px;
+  font-weight: 400px;
+}
+.Featured-works .projeckt-1 .project-flex p {
+  font-weight: 500;
+}
+.Featured-works .projeckt-1 .source-flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  margin-top: 40px;
+}
+.Featured-works .projeckt-1 .source-flex .source-code {
+  width: 120px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding-top: 5px;
+}
+.Featured-works .projeckt-1 .source-flex .web-source {
+  width: 120px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding-top: 5px;
+}
+.Featured-works .projeckt-1 .source-flex a {
+  color: black;
+}
+a .Featured-works .projeckt-1 .source-flex :hover {
+  color: blue;
+  font-size: 18px;
+}
+
+footer {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(225deg, rgba(255, 255, 255, 0.8886905104) 39%, rgba(35, 133, 205, 0.9195028353) 71%);
+}
+footer .main-footer {
+  display: flex;
+  margin-top: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .main-footer .icon-flex {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-right: 10px;
+}
+footer .main-footer .imige-icon1 {
+  width: 40px;
+  height: 40px;
+  background-image: url(../photo/in.png);
+  background-position: center;
+  background-size: cover;
+}
+footer .main-footer .imige-icon2 {
+  width: 40px;
+  height: 40px;
+  background-image: url(../photo/github.png);
+  background-position: center;
+  background-size: cover;
+}
+footer .main-footer .email-flex {
+  display: flex;
+  margin-top: 10px;
+}
+footer .main-footer .email-flex a {
+  margin-left: 20px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

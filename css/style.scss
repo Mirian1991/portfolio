@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap');
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(225deg, rgba(255, 255, 255, 0.06235997817095584) 41%, rgba(35, 133, 205, 0.9783263647255778) 62%);
+
+
+
+
+    .header-content {
+
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 80px;
+
+
+
+
+
+        ul {
+            display: flex;
+            column-gap: 30px;
+
+            li {
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                color: black;
+
+
+
+            }
+
+        }
+
+
+
+        .logo {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 38px;
+
+            color: white;
+
+
+        }
+    }
+}
+
+.personal-main {
+    display: flex;
+
+    .personal-info {
+
+
+        h1 {
+            width: 510px;
+            height: 110px;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 60px;
+            margin-top: 160px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            width: 500px;
+            height: 100px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+
+
+
+    }
+
+
+    .myphoto {
+        width: 300px;
+        height: 380px;
+        margin-left: 280px;
+        margin-top: 100px;
+        margin-bottom: 130px;
+    }
+
+}
+
+.skill-content {
+    background: #EDF7FA;
+    height: 350px;
+    margin-bottom: 150px;
+
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        padding-top: 30px;
+        margin-left: 10px;
+    }
+
+    .skills-list {
+        display: flex;
+        column-gap: 60px;
+        margin-left: 20px;
+        margin-top: 70px;
+        justify-content: center;
+
+
+        .skill {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            h2 {
+                margin-top: 30px;
+            }
+
+        }
+
+
+        .card-image {
+            width: 95px;
+            height: 95px;
+            background-position: center;
+            background-size: cover;
+
+
+
+        }
+
+        .imige-wrapper1 {
+            background-image: url("../photo/html5.png");
+        }
+
+        .imige-wrapper2 {
+            background-image: url("../photo/css.png");
+
+
+
+
+        }
+
+        .imige-wrapper3 {
+            background-image: url("../photo/scss.jpg");
+        }
+
+        .imige-wrapper4 {
+            background-image: url("../photo/figma.png");
+        }
+
+        .imige-wrapper5 {
+            background-image: url("../photo/XD.png");
+        }
+
+    }
+
+
+}
+
+
+.Featured-works {
+    margin-bottom: 60px;
+
+    .main-flex {
+        display: flex;
+
+        column-gap: 55px;
+        row-gap: 100px;
+        flex-wrap: wrap;
+
+
+    }
+
+    h2 {
+        font-size: 26px;
+        font-weight: 500;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    .projeckt-1 {
+        width: 350px;
+        height: 500px;
+        -webkit-box-shadow: 3px 6px 5px 2px rgba(0, 0, 0, 0.47);
+        box-shadow: 3px 6px 5px 2px rgba(0, 0, 0, 0.47);
+
+        .project-image1 {
+            width: 100%;
+            height: 50%;
+
+            background-image: url(../photo/project1.PNG);
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        .project-flex {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+
+
+            .stack-list {
+                display: flex;
+                column-gap: 20px;
+            }
+
+            .project-page {
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            .project-stack {
+                font-size: 18px;
+                font-weight: 400px;
+            }
+
+            p {
+                font-weight: 500;
+            }
+        }
+
+        .source-flex {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            column-gap: 40px;
+            margin-top: 40px;
+
+            .source-code {
+                width: 120px;
+                height: 30px;
+                border: 1px solid black;
+                border-radius: 40px;
+                padding-top: 5px
+            }
+
+            .web-source {
+                width: 120px;
+                height: 30px;
+                border: 1px solid black;
+                border-radius: 40px;
+                padding-top: 5px
+            }
+
+            a {
+                color: black;
+
+            }
+
+
+        }
+
+
+    }
+
+    footer {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(225deg, rgba(255, 255, 255, 0.8886905103838411) 39%, rgba(35, 133, 205, 0.919502835313813) 71%);
+
+
+
+        .main-footer {
+
+
+            display: flex;
+            margin-top: 100px;
+            height: 100px;
+            align-items: center;
+
+            justify-content: space-between;
+
+            .icon-flex {
+                display: flex;
+                column-gap: 30px;
+                margin-right: 10px;
+
+            }
+
+
+
+            .imige-icon1 {
+                width: 40px;
+                height: 40px;
+                background-image: url(../photo/in.png);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imige-icon2 {
+                width: 40px;
+                height: 40px;
+                background-image: url(../photo/github.png);
+
+                background-position: center;
+                background-size: cover;
+            }
+
+            .email-flex {
+                display: flex;
+
+                margin-top: 10px;
+
+
+                a {
+                    margin-left: 20px;
+                    color: white;
+                }
+            }
+        }
+
+    }

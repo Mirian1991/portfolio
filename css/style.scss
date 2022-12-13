@@ -12,7 +12,7 @@ header {
     position: fixed;
     width: 100%;
     background: rgb(255, 255, 255);
-    background: linear-gradient(225deg, rgba(255, 255, 255, 0.06235997817095584) 41%, rgba(35, 133, 205, 0.9783263647255778) 62%);
+    background: linear-gradient(225deg, rgba(255, 255, 255, 0.06235997817095584) 41%, rgba(35, 133, 205, 0.976) 62%);
 
 
 
@@ -412,6 +412,11 @@ footer {
 
 
 @media (max-width:768px) {
+
+    .main-footer {
+        justify-content: space-between;
+    }
+
     .skill-content {
         height: 100%;
 
@@ -436,15 +441,74 @@ footer {
 
 @media (max-width:600px) {
 
-    .header-content {
-        nav {
-            display: none;
+
+
+    .personal-main {
+
+        h1 {
+            width: 374px;
+            height: 110px;
+            font-weight: 400;
+            font-size: 44px;
+            line-height: 49px;
+            margin-bottom: 40px;
         }
 
-        .logo {
-            align-items: center;
+        p {
+            border: 1px solid black;
+            min-width: 300px;
         }
+
+
     }
 
+    .header-content {
+
+
+
+        display: flex;
+        flex-direction: column;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9475140397956058) 43%, rgba(35, 133, 205, 0.7934524151457458) 65%);
+        min-height: 110px;
+
+
+        .logo {
+            padding-top: 15px;
+        }
+
+
+        nav {
+            padding-bottom: 10px;
+        }
+
+    }
+
+    .personal-info {}
+
+
+    .photodecore {
+        margin-top: 150px;
+    }
+
+    .main-footer {
+        display: flex;
+        flex-direction: column;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9475140397956058) 43%, rgba(35, 133, 205, 0.7934524151457458) 65%);
+        min-height: 150px;
+
+        .icon-flex {
+            margin-bottom: 10px;
+        }
+
+        .email-flex {
+            padding-top: 10px;
+
+            p {
+                color: white;
+            }
+        }
+    }
 
 }

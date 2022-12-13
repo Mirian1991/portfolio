@@ -17,6 +17,7 @@ header {
 
 
 
+
     .header-content {
 
 
@@ -60,8 +61,12 @@ header {
     }
 }
 
+
+
 .personal-main {
     display: flex;
+    flex-wrap: wrap;
+
 
     .personal-info {
 
@@ -104,6 +109,7 @@ header {
     background: #EDF7FA;
     height: 350px;
     margin-bottom: 150px;
+    // display: flex;
 
     h3 {
         font-size: 24px;
@@ -139,6 +145,11 @@ header {
             height: 95px;
             background-position: center;
             background-size: cover;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+            }
 
 
 
@@ -183,7 +194,7 @@ header {
         column-gap: 55px;
         row-gap: 100px;
         flex-wrap: wrap;
-
+        z-index: 100;
 
     }
 
@@ -199,6 +210,11 @@ header {
         height: 500px;
         -webkit-box-shadow: 3px 6px 5px 2px rgba(0, 0, 0, 0.47);
         box-shadow: 3px 6px 5px 2px rgba(0, 0, 0, 0.47);
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
 
         .project-image1 {
             width: 100%;
@@ -248,14 +264,23 @@ header {
             margin-top: 40px;
 
             .source-code {
+                color: black;
                 width: 120px;
                 height: 30px;
                 border: 1px solid black;
                 border-radius: 40px;
                 padding-top: 5px
             }
+
+            a:hover {
+                font-weight: 500;
+            }
+
+
+
 
             .web-source {
+                color: black;
                 width: 120px;
                 height: 30px;
                 border: 1px solid black;
@@ -263,10 +288,7 @@ header {
                 padding-top: 5px
             }
 
-            a {
-                color: black;
 
-            }
 
 
         }
@@ -274,59 +296,155 @@ header {
 
     }
 
-    footer {
-        background: rgb(255, 255, 255);
-        background: linear-gradient(225deg, rgba(255, 255, 255, 0.8886905103838411) 39%, rgba(35, 133, 205, 0.919502835313813) 71%);
+
+}
+
+footer {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(225deg, rgba(255, 255, 255, 0.8886905103838411) 39%, rgba(35, 133, 205, 0.919502835313813) 71%);
 
 
 
-        .main-footer {
+    .main-footer {
 
 
+        display: flex;
+        margin-top: 100px;
+        height: 100px;
+        align-items: center;
+
+        justify-content: space-between;
+
+        .icon-flex {
             display: flex;
-            margin-top: 100px;
-            height: 100px;
-            align-items: center;
+            column-gap: 30px;
+            margin-right: 10px;
 
-            justify-content: space-between;
-
-            .icon-flex {
-                display: flex;
-                column-gap: 30px;
-                margin-right: 10px;
-
-            }
-
-
-
-            .imige-icon1 {
-                width: 40px;
-                height: 40px;
-                background-image: url(../photo/in.png);
-                background-position: center;
-                background-size: cover;
-            }
-
-            .imige-icon2 {
-                width: 40px;
-                height: 40px;
-                background-image: url(../photo/github.png);
-
-                background-position: center;
-                background-size: cover;
-            }
-
-            .email-flex {
-                display: flex;
-
-                margin-top: 10px;
-
-
-                a {
-                    margin-left: 20px;
-                    color: white;
-                }
-            }
         }
 
+
+
+        .imige-icon1 {
+            width: 40px;
+            height: 40px;
+            background-image: url(../photo/in.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .imige-icon2 {
+            width: 40px;
+            height: 40px;
+            background-image: url(../photo/github.png);
+
+            background-position: center;
+            background-size: cover;
+        }
+
+        .email-flex {
+            display: flex;
+
+            margin-top: 10px;
+
+
+            a {
+                margin-left: 20px;
+                color: white;
+            }
+        }
     }
+
+}
+
+
+@media (max-width: 1177px) {
+    .main-flex {
+        justify-content: space-around;
+    }
+
+}
+
+
+@media (max-width: 1110px) {
+
+    .personal-main {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+
+
+        .myphoto {
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-top: 80px;
+
+        }
+    }
+
+    .main-flex {
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .personal-main {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+
+
+        .myphoto {
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-top: 80px;
+
+        }
+    }
+
+    .main-flex {
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width:768px) {
+    .skill-content {
+        height: 100%;
+
+
+
+
+
+        .skills-list {
+
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+
+        }
+
+
+    }
+
+}
+
+
+@media (max-width:600px) {
+
+    .header-content {
+        nav {
+            display: none;
+        }
+
+        .logo {
+            align-items: center;
+        }
+    }
+
+
+}

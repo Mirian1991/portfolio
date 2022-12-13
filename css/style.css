@@ -302,10 +302,6 @@ footer .main-footer .email-flex a {
     line-height: 49px;
     margin-bottom: 40px;
   }
-  .personal-main p {
-    border: 1px solid black;
-    min-width: 300px;
-  }
   .header-content {
     display: flex;
     flex-direction: column;
